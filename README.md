@@ -13,12 +13,25 @@ It is intentionally language-agnostic and includes a practical baseline:
 - a dedicated secret scanning workflow
 - local pre-commit checks
 
+## When to choose this template
+
+Use this template when the repository does not clearly belong to one of the more specific starters:
+
+- `service-template` for apps, APIs, and runtime services
+- `library-template` for reusable packages and shared modules
+- `infra-template` for infrastructure, environments, and operations automation
+
 ## How to use this template
 
 1. Create a new repository from this template.
 2. Replace this README with project-specific documentation.
 3. Update `.gitignore` if your stack needs more ignores.
 4. Adjust CI once the project language and test tooling are chosen.
+
+If a repository is created outside the ideal path, reconcile it with the baseline using:
+
+- `bootstrap-gh-repo <repo-name> --template SaagarPatelOne/repo-template`
+- `harden-gh-repo SaagarPatelOne/<repo-name>`
 
 ## Baseline expectations
 
